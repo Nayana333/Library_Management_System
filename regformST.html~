@@ -1,0 +1,32 @@
+<html>
+<head>
+<title>staff registration form</title>
+<style>
+label{
+width:120px;
+display:inline-block;
+}
+body
+{
+background-image: url("istockphoto-949118068-612x612.jpg");
+background-size:cover;
+}
+</style>
+</head>
+<body bgcolor="pink">
+<center><h2><u><font color='white'>REGISTRATION FORM</font></u></h2></center>
+<form method="POST" action="streg.php">
+<center><label><font color='white'>STAFF NAME:</label><input type="text" name="stname"></center><br>
+<center><label>STAFF ID:</label><input type="text" name="stid"></center><br>
+<center><label>POSITION:</label><input type="text" name="posn"></center><br>
+<center><label>MOBNO:</label><input type="text" name="mbno"></center><br>
+<center><label>GENDER:</label><input type="radio" name="gen" value="MALE">MALE<br>
+<center><input type="radio" name="GENDER" value="FEMALE">FEMALE<br><br>
+<center><label>USERNAME:</label><input type="text" name="usn"></center><br>
+<center><label>PASSWORD:</label><input type="text" name="psw"></center><br>
+<center><label>JOIN DATE:</label><input type="date" name="jdate"></font></center><br>
+<center><input type="submit" name="SUBMIT" value="SUBMIT">
+<center><input type="submit" name="BUTTON" value="RESET"></center><br>
+</form>
+</body>
+</html>

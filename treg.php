@@ -1,0 +1,36 @@
+<?php
+$tname=$_POST["tname"];
+$tid=$_POST[""];
+$deptm=$_POST["DEPARTMENT"];
+$pos=$_POST["POSITION"];
+$mob=$_POST["MOBILENO"];
+$gender=$_POST["GENDER"];
+$usn=$_POST["usn"];
+$psw=$_POST["psw"];
+$con=mysql_connect("localhost","root","");
+if($con)
+$db=mysql_select_db("project_65",$con);
+ if(!$db)
+{
+ die("cannot connect to database".mysql_error($con));
+}
+$query1="insert into login (usn,psw,type)values('$usn','$psw','teacher')";
+if(mysql_query($query1,$con))
+{
+echo "login completed";
+}
+else
+{
+echo"error".mysql_error($con);
+}
+$query2="insert into teacher values('$tname',$tid,'$deptm','$pos','$mob','$gender','$usn')";
+if(mysql_query($query2,$con))
+{
+echo"registration completed successfully";
+}
+else
+{
+ echo"error".mysql_error($con);
+}
+mysql_close($con);
+?>

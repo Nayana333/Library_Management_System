@@ -1,0 +1,17 @@
+
+<?php
+session_start();
+echo"<center><font size = '32' color = 'white'>WELCOME ".$_SESSION["usn"]."</font></center>";
+?>
+<html>
+<style>
+body
+{
+background-image: url("library.jpeg");
+}
+</style>
+<form method="POST" action="homepageS.html"><br>
+<input type="submit" name="SUBMIT" value="student page">
+</form>
+</body>
+</html>

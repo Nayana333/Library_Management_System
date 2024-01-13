@@ -1,0 +1,20 @@
+<html>
+<head>
+<title>add new book</title>
+<style>
+label{
+width:120px;
+display:inline-block;
+</style>
+</head>
+<form>
+<body>
+<center><h1><u>ADD BOOK</u></h1></center>
+<center><label>BOOK ID:</label><input type="text" name="bid"></center><br>
+<center><label>BOOK NAME:</label><input type="text" name="bname"></center><br>
+<center><label>AUTHOR NAME:</label><input type="text" name="author"></center><br>
+<center><input type="submit" name="SUBMIT" value="SUBMIT">
+</body>
+</form>
+<html>
+

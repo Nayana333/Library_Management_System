@@ -1,0 +1,22 @@
+<?php
+$rid=$_POST["rid"];
+$rdate=$_POST["rdate"];
+$return_by=$_POST["rname"];
+$con=mysql_connect("localhost","root","");
+if($con)
+$db=mysql_select_db("project_65",$con);
+ if(!$db)
+{
+ die("cannot connect to database".mysql_error($con));
+}
+$query1="insert into returns values($rid,'$rdate','$return_by','')";
+if(mysql_query($query1,$con))
+{
+echo"book returned successfully";
+}
+else
+{
+ echo"error".mysql_error($con);
+}
+mysql_close($con);
+?>

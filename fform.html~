@@ -1,0 +1,16 @@
+<html>
+<head>
+<title>add new book</title>
+<style>
+label{
+width:120px;
+display:inline-block;
+</style>
+</head>
+<body>
+<form method="POST" action="fetchS.php">
+<center><label>ADMISSION NO:</label><input type="text" name=adno"></center><br>
+<center><label></label><input type="submit" name="button" value="get details"></center><br><br>
+</form>
+</body>
+</html>

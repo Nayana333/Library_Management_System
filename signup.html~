@@ -1,0 +1,51 @@
+<html>
+<head>
+<title>login form</title>
+<style>
+body
+{
+background-image: url("library-image2.jpg");
+background-size: 1280px 760px;	
+background-repeat: no-repeat;
+}
+.title
+{
+background:#885656;
+color:white;
+height: 60px;
+}
+.login
+{
+background:#D3D3D3;
+color:black;
+padding: 20px;
+width: 500px;
+position: fixed;
+top: 25%;
+right: 30%;
+}
+label{
+width:120px;
+display:inline-block;
+}
+</style>
+</head>
+<form method="POST" action="login.php">
+<body>
+<div class="title"><center><h1><u>NIRMALA COLLEGE LIBRARY</u></h1></center></div>
+<div class="login"><center><label>USERNAME:</label><input type="text" name="usn"></center><br>
+<center><label>PASSWORD:</label><input type="PASSWORD" name="psw"></center><br>
+<center><input type="submit" name="SUBMIT" value="LOGIN"><br>
+</form>
+<form method="POST" action="regvalidation.php">
+<input type="submit" name="SUBMIT" value="REGISTRATION FOR STUDENT">
+</form>
+<form method="POST" action="regT.php">
+<input type="submit" name="SUBMIT" value="REGISTRATION FOR TEACHER">
+</form>
+<form>
+<input type="submit" name="BUTTON" value="RESET"><br></div>
+</form>
+</body>
+<html>
+

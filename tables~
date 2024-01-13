@@ -1,0 +1,18 @@
+ create table student(adno int primary key,sname varchar(10),dept varchar(10),mobno varchar(10),gender varchar(10),year varchar(10),usn varchar(10));
+alter table student add constraint fk foreign key(usn)references login(usn);
+
+create table teacher(tname varchar(10),tid int primary key,deptm varchar(10),pos varchar(10),mob varchar(10),gender varchar(10),usn varchar(10));
+alter table teacher add constraint k foreign key(usn)references login(usn);
+
+create table login(usn varchar(10) PRIMARY KEY,psw varchar(10),type varchar(10));
+
+create table staff(stname int primary key,stid varchar(10),posn varchar(10),mbno varchar(10),gen varchar(10),usn varchar(10),jdate varchar(10));
+ alter table staff add constraint k1 foreign key(usn)references login(usn);
+
+create table book(bid int primary key,bname varchar(10),author varchar(10),status tinyint(1));
+
+ create table issue(iid int primary key,bname varchar(70),bid int,usn varchar(10),idate varchar(10),ddate varchar(10),issue_by varchar(20));
+ alter table issue add constraint k2 foreign key(usn)references login(usn);
+alter table issue add constraint k3 foreign key(bid)references book(bid);
+
+create table returns(rid int primary key,rdate varchar(10),return_by varchar(10));

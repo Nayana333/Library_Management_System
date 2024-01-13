@@ -1,0 +1,40 @@
+<html>
+<head>
+<title>issue details</title>
+<style>
+label{
+width:120px;
+display:inline-block;
+</style>
+</head>
+<body>
+<form method="POST" action="fetchIS.php">
+<center><h1><u>ISSUE&RETURN DETAILS</u></h1></center>
+<center><h2><u>ISSUE DETAILS</u></h1></center>
+<center><label>ISSUE ID:</label><input type="text" name="iid"></center>
+<center><input type="submit" name="submit" value="get details"></center><br>
+<center><label>BOOK NAME:</label><input type="text" name="bname"></center><br>
+<center><label>BOOK ID:</label><input type="text" name="bid"></center><br>
+<center><label>USERNAME:</label><input type="text" name="usn"></center><br>
+<center><label>ISSUE DATE:</label><input type="date" name="idate"></center><br>
+<center><label>DUE DATE:</label><input type="date" name="ddate"></center><br>
+<center><label>ISSUED BY:</label><input type="text" name="iname"></center><br>
+</body>
+</form>
+<style>
+label{
+width:120px;
+display:inline-block;
+</style>
+</head>
+<body>
+<form>
+<center><h2><u>RETURN DETAILS</u></h1></center>
+<center><label>RETURN ID:</label><input type="text" name="iid"></center><br>
+<center><label>RETURN DATE:</label><input type="date" name="rdate"></center><br>
+<center><label>RETURNED BY:</label><input type="text" name="rname"></center><br>
+<center><input type="submit" name="SUBMIT" value="RETURNED">
+</body>
+</form>
+<html>
+

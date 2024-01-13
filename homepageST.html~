@@ -1,0 +1,32 @@
+<html>
+<head>
+<title> staff home page</title>
+<style>
+label{
+width:120px;
+display:inline-block;
+</style>
+<body>
+<form>
+<center><h1><u>WELCOME STAFF</u></h1></center>
+</form>
+<form method="POST" action="viewstudent.php">
+<center><input type="submit" name="vus" value=" update student"><br><br>
+</form>
+<form method="POST" action="viewteacher.php">
+<center><input type="submit" name="vut" value=" update teacher"><br><br>
+</form>
+<form method="POST" action="viewbook.php">
+<center><input type="submit" name="vub" value="edit book details"><br><br>
+</form>
+<form method="POST" action="issue1.php">
+<center><input type="submit" name="issue" value="book issue"><br><br>
+</form>
+<form method="POST" action="fetchIS.php">
+<center><input type="submit" name="return" value="book return"><br><br>
+</form>
+<form>
+<center><input type="submit" name="updatefine" value="update fine details"><br><br>
+</body>
+</form>
+</html> 

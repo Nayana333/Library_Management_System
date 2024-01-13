@@ -1,0 +1,30 @@
+<html>
+<head>
+<title> teacher home page</title>
+<style>
+body
+{
+background-image: url("library.jpeg");
+}
+</style>
+<style>
+label{
+width:120px;
+display:inline-block;
+</style>
+<form>
+<body>
+</form>
+<form method="POST" action="booksearch.html">
+<center><h1><u><font color='white' size='32'>WELCOME TEACHER</font></u></h1></center>
+<body>
+<center><input type="submit" name="search" value="SEARCH BOOK"><br><br>
+</form>
+<form method="POST" action="viewbooks.php">
+<center><input type="submit" name="view" value="VIEW BOOK DETAILS"><br><br>
+</form>
+<form method="POST" action="updateT2.php">
+<center></label><input type="submit" name="details" value="UPDATE DETILS"><br><br>
+</form>
+</body>
+<html> 

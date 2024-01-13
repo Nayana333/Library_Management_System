@@ -1,0 +1,42 @@
+<html>
+<head>
+<title> admin home page</title>
+<style>
+body
+{
+background-image: url("library.jpeg");
+}
+</style>
+<body>
+<form>
+<center><h1><u><font size='32' color='white'>WELCOME ADMIN</font></u></h1></center>
+</form>
+<form method="POST" action="viewstudent.php">
+<center><input type="submit" name="vus" value="view and update student"><br><br>
+</form>
+<form method="POST" action="viewteacher.php">
+<center><input type="submit" name="vut" value="view and update teacher"><br><br>
+</form>
+<form method="POST" action="viewbook.php">
+<center><input type="submit" name="vub" value="view and update book"><br><br>
+</form>
+<form method="POST" action="viewstaff.php">
+<center><input type="submit" name="vust" value="view and update staff"><br><br>
+</form>
+<form method="POST" action="addbook.html">
+<center><input type="submit" name="newbook" value="add new book"><br><br>
+</form>
+<form method="POST" action="regformST.html">
+<center><input type="submit" name="add staff" value="add new staff"><br><br>
+</form>
+<form>
+<center><input type="submit" name="updatefine" value="update fine details"><br><br>
+</form>
+<form method="POST" action="issue.html">
+<center><input type="submit" name="issueb" value="book issue"><br><br>
+</form>
+<form method="POST" action="return.html">
+<center><input type="submit" name="returnb" value="book return"><br><br>
+</form>
+</body>
+<html> 

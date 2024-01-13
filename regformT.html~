@@ -1,0 +1,32 @@
+<html>
+<head>
+<title>teacher registration form</title>
+<style>
+label{
+width:120px;
+display:inline-block;
+}
+body
+{
+background-image: url("istockphoto-949118068-612x612.jpg");
+background-size:cover;
+}
+</style>
+</head>
+<body bgcolor="pink">
+<center><h2><u>REGISTRATION FORM</u></h2></center>
+<form method="POST" action="treg.php">
+<center><label>NAME:</label><input type="text" name="NAME"></center><br>
+<center><label>TID:</label><input type="text" name="TID"></center><br>
+<center><label>DEPARTMENT:</label><input type="text" name="DEPARTMENT"></center><br>
+<center><label>POSITION:</label><input type="text" name="POSITION"></center><br>
+<center><label>MOBNO:</label><input type="text" name="MOBILENO"></center><br>
+<center><label>GENDER:</label><input type="radio" name="GENDER" value="MALE">MALE<br>
+<center><input type="radio" name="GENDER" value="FEMALE">FEMALE<br><br>
+<center><label>USERNAME:</label><input type="text" name="usn"></center><br>
+<center><label>PASSWORD:</label><input type="text" name="psw"></center><br>
+<center><input type="submit" name="SUBMIT" value="SUBMIT">
+<center><input type="submit" name="BUTTON" value="RESET"></center><br>
+</form>
+</body>
+</html>
